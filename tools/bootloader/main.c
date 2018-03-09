@@ -475,14 +475,12 @@ static const char ** processCommandLineArguments(JavaVMInitArgs *initArgs, const
  *   3) contain quotes
  * then call createVM().
  */
-<<<<<<< HEAD
 /**
  * main函数作用:
  * 1.初始化rvm线程启动所需要的数据;
  * 2.启动rvm线程;
  */
-=======
->>>>>>> 78c8bd93ca377bf2a27ca0406d74281307d2b5e2
+
 int main(int argc, const char **argv)
 {
   int vbufret, j, ret;
