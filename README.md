@@ -4,7 +4,7 @@
 - 相关笔记,注释在源码中!
 
 #### 运行环境:
-- Ubuntu16+x86_64
+- Ubuntu16+x86_64+Java8
 - eclipse oxygen  
     
 #### 阅读源码进程:
