@@ -337,19 +337,26 @@ EXTERNAL void sysStartMainThread(jboolean vmInSeparateThread, Address ip, Addres
     sysThreadArguments[4] = MAIN_THREAD_ALLOW_TERMINATE;
 #ifndef RVM_FOR_HARMONY
     // create attributes
+<<<<<<< HEAD
     /*初始化rvm线程参数
      * 本质:参考sysThread_ia32.c中bootThread方法=>线程的启动=>初始化cpu寄存器的值
      * */
     rc = pthread_attr_init(&sysThreadAttributes);
     /*rc==0代表正常初始化线程参数*/
+=======
+    rc = pthread_attr_init(&sysThreadAttributes);
+>>>>>>> 78c8bd93ca377bf2a27ca0406d74281307d2b5e2
     if (rc) {
       ERROR_PRINTF("%s: pthread_attr_init failed (rc=%d)\n", Me, rc);
       sysExit(EXIT_STATUS_SYSCALL_TROUBLE);
     }
     // force 1:1 pthread to kernel thread mapping (on AIX 4.3)
+<<<<<<< HEAD
     /*设置rvm线程如何与其他线程竞争CPU时间,pthread_scope_system表示与系统中的其他线程直接竞争时间
      * note:pthread_scope_process表示与进程中的其他线程竞争时间
      * */
+=======
+>>>>>>> 78c8bd93ca377bf2a27ca0406d74281307d2b5e2
     pthread_attr_setscope(&sysThreadAttributes, PTHREAD_SCOPE_SYSTEM);
 #endif
     // create native thread
@@ -358,7 +365,10 @@ EXTERNAL void sysStartMainThread(jboolean vmInSeparateThread, Address ip, Addres
                          (hythread_entrypoint_t)sysThreadStartup,
                          sysThreadArguments);
 #else
+<<<<<<< HEAD
     /*开始创建rvm线程*/
+=======
+>>>>>>> 78c8bd93ca377bf2a27ca0406d74281307d2b5e2
     rc = pthread_create(&sysThreadHandle,
                         &sysThreadAttributes,
                         sysThreadStartup,
@@ -370,7 +380,10 @@ EXTERNAL void sysStartMainThread(jboolean vmInSeparateThread, Address ip, Addres
       sysExit(EXIT_STATUS_SYSCALL_TROUBLE);
     }
 #ifndef RVM_FOR_HARMONY
+<<<<<<< HEAD
     /*线程释放系统资源方式=>将rvm线程与当前线程分离=>rvm线程将独立运行,待rvm进程结束自动释放*/
+=======
+>>>>>>> 78c8bd93ca377bf2a27ca0406d74281307d2b5e2
     rc = pthread_detach(sysThreadHandle);
     if (rc)
     {

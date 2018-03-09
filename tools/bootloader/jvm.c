@@ -479,9 +479,14 @@ int createVM(int vmInSeparateThread)
    * written out to main memory so that it will be seen by icache when
    * instructions are fetched back
    */
+<<<<<<< HEAD
   /*1.将rvm的启动代码刷回内存*/
   sysSyncCache(bootCodeRegion, roundedCodeRegionSize);
   /*2.启动rvm主线程*/
+=======
+  sysSyncCache(bootCodeRegion, roundedCodeRegionSize);
+
+>>>>>>> 78c8bd93ca377bf2a27ca0406d74281307d2b5e2
   sysStartMainThread(vmInSeparateThread, bootRecord->ipRegister, bootRecord->spRegister,
                      *(Address *) (bootRecord->tocRegister + bootRecord->bootThreadOffset),
                      bootRecord->tocRegister, &bootRecord->bootCompleted);

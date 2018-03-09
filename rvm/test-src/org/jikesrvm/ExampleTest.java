@@ -29,7 +29,10 @@ public class ExampleTest {
   @Category(RequiresBuiltJikesRVM.class)
   public void testThatRequiresJikesRVM() {
     assertTrue(isRunningOnBuiltJikesRVM());
+<<<<<<< HEAD
     System.out.println("hello world");
+=======
+>>>>>>> 78c8bd93ca377bf2a27ca0406d74281307d2b5e2
   }
 
   @Test
