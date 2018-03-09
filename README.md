@@ -8,7 +8,9 @@
 - eclipse oxygen  
     
 #### 阅读源码进程:
-- [x] 将JikesRVM跑起来         => key:工具配置
-- [x] rvm启动;                => key:c代码初始化虚拟机运行参数,并启动rvm线程
+- [x] 将JikesRVM跑起来         
+    - key:工具配置
+- [x] rvm启动; 
+    - key:c代码初始化虚拟机运行参数,并启动rvm线程
 - [ ] TODO => 持续更新
   
