@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JikesRVM x86_64-linux production.iml" filepath="$PROJECT_DIR$/JikesRVM x86_64-linux production.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MMTk/MMTk.iml" filepath="$PROJECT_DIR$/MMTk/MMTk.iml" />
+    </modules>
+  </component>
+</project>
