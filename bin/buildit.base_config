@@ -53,11 +53,7 @@ global.javahome.ppc32-linux=/opt/ibm-java2-ppc-50
 global.javahome.ppc64-linux=/opt/ibm-java2-ppc-50
 global.javahome.ppc64le-linux=/usr/lib/jvm/java-8-openjdk
 global.javahome.ia32-linux=/usr/lib/jvm/java-7-openjdk-amd64
-<<<<<<< HEAD
 global.javahome.x86_64-linux=/usr/lib/jvm/jdk1.8.0_152
-=======
-global.javahome.x86_64-linux=/usr/lib/jvm/java-7-openjdk-amd64
->>>>>>> 78c8bd93ca377bf2a27ca0406d74281307d2b5e2
 global.javahome.x86_64_m64-linux=/usr/lib/jvm/java-7-openjdk-amd64
 global.javahome.ia32-osx=/System/Library/Frameworks/JavaVM.framework/Home
 global.javahome.x86_64-osx=/System/Library/Frameworks/JavaVM.framework/Home

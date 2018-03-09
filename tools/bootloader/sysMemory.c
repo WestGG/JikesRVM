@@ -302,28 +302,19 @@ EXTERNAL void sysSyncCache(void *address, size_t size)
 
   /* update storage */
   /* Note: if one knew the cache line size, one could write a better loop */
-<<<<<<< HEAD
   /*Allows a program to copy the contents of a modified block to main memory.
    * 作用:dcbst指令将缓存行内的数据刷回内存!
    * */
-=======
->>>>>>> 78c8bd93ca377bf2a27ca0406d74281307d2b5e2
   for (addr=start; addr < end; ++addr)
     asm("dcbst 0,%0" : : "r" (addr) );
 
   /* wait for update to commit */
-<<<<<<< HEAD
   /*asm("sync")=>执行sync指令,作用强制同步=>确保sync前的执行全部执行完再执行sync后面的指令*/
-=======
->>>>>>> 78c8bd93ca377bf2a27ca0406d74281307d2b5e2
   asm("sync");
 
   /* invalidate icache */
   /* Note: if one knew the cache line size, one could write a better loop */
-<<<<<<< HEAD
   /*icbi指令 => 放弃缓存行的无效数据*/
-=======
->>>>>>> 78c8bd93ca377bf2a27ca0406d74281307d2b5e2
   for (addr=start; addr<end; ++addr)
     asm("icbi 0,%0" : : "r" (addr) );
 

@@ -479,6 +479,7 @@ static const char ** processCommandLineArguments(JavaVMInitArgs *initArgs, const
  * main函数作用:
  * 1.初始化rvm线程启动所需要的数据;
  * 2.启动rvm线程;
+ * 3.Q:哪里分配内存空间????
  */
 
 int main(int argc, const char **argv)

@@ -45,6 +45,8 @@ public class RVMClassTest {
     RVMClass secondSubClass = createRVMClass(secondSubClassName, topClass);
     assertThat(secondSubClass.getSuperClass(), is(topClass));
 
+    System.out.println("hello test");
+    
     RVMClass[] subClasses = topClass.getSubClasses();
     List<RVMClass> subClassesList = Arrays.asList(subClasses);
     assertTrue(subClassesList.contains(firstSubClass));
