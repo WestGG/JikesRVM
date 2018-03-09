@@ -3,8 +3,8 @@
 - 出于好奇，决定来研究下这款虚拟机！
 
 > 运行环境:
-- Ubuntu16
-- eclipse oxygen  
+- Ubuntu16+x86_64
+- eclipse oxygen  
     
 > 阅读源码进程:
 - [x] 将JikesRVM跑起来;
